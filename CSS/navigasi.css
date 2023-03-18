@@ -1,0 +1,28 @@
+.topnav {
+  display: flex;
+  overflow: hidden;
+  background-color: aliceblue;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 17px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #c76209;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: aqua;
+  margin-left: 20px;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+
+  align-items: center;
+}
+.topnav a:hover {
+  background-color: rgb(105, 8, 8);
+  color: white;
+}
