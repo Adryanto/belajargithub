@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <title>Belajar Javascript</title>
+
+    <script type="text/javascript">
+      document.write("<h1>Hello World</h1>");
+      document.write("<h2 style='color:red'>Javascript</h2>");
+
+      var a = "Universitas Multi Data Palembang";
+      var b = 20;
+      document.write("A = " + a + "<br>");
+      document.write("B = " + b + "<br>");
+
+      console.log("Nilai A = " + a);
+      console.log("Nilai B  = " + b);
+
+      console.log(typeof a);
+      console.log(typeof b);
+
+      //operator aritmatika
+      var i = 40;
+      var j = 50;
+      document.write("i+j = " + (i + j) + "<br>");
+      document.write("i modulus j = " + (i % j) + "<br>");
+      document.write("i++  = " + i++ + "<br>");
+
+      //pengujian nilai dari i
+      if (i < j) {
+        document.write("I lebih kecil dari j");
+      } else {
+        document.write("I lebih besar dari j");
+      }
+
+      //array
+      var color = ["blue", "red", "yellow"];
+      document.write("<br>" + color[0] + " " + color[2]);
+      document.write("<br>" + "================================");
+      //tampilkan array dengan menggunakan metode for(perulangan)
+
+      for (var i = 0; i < color.length; i++) {
+        document.write(
+          "<br> <h4 style = 'color:  " + color[i] + ">" + color[i]
+        );
+      }
+
+      //perulangan (for)
+      for (var i = 0; i <= 10; i++) {
+        if (i === 3) {
+          break;
+        }
+        console.log("Nilai i = " + i);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Belajar Javascript Dasar</h1>
+  </body>
+</html>
