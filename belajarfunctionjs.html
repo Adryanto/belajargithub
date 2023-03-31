@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<br lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function tampilPesan() {
+        return "Universitas MDP";
+      }
+      function kali(bil1, bil2) {
+        return bil1 * bil2;
+      }
+      function pesan1() {
+        alert("Pesan Hello World");
+      }
+      function pesan2(nama) {
+        alert("Selamat Datang, " + nama);
+      }
+      function pesan3(bil1,bil2){
+        var nilai = prompt("Silahkan Masukkan nilai !")
+      }
+      function myFunction() {
+        let text;
+        if (confirm("Press a button!") == true) {
+            text = "You pressed OK!";
+        } else {
+            text = "You canceled!";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+    //   ini konfirmasi 
+
+    </script>
+  </head>
+  <body>
+  <br onload="pesan1()">
+    <script type="text/javascript">
+      document.write(tampilPesan() + "</br>");
+      document.write(kali(3, 4) + "</br>");
+
+
+    </script>
+
+    <br>
+      <input type="button" value="PANGGIL PESAN 1" onclick="pesan1()" /></br></br>
+      <input type="button" value="PANGGIL PESAN 2" onclick="pesan2('Aceng')" /></br></br>
+      <input type="button" value="PANGGIL PESAN 3" onclick="pesan3()" />
+      <input type="button" value="PANGGIL konfirmasi" onclick="myFunction()" />
+    </form>
+
+    <p id="demo"></p>
+    <!-- fungsi demo ini untuk meletakkan posisi dari panggil konfirmasi -->
+    <hr>
+    <p id="kalimat">Pengembangan Aplikasi Web 1</p>
+    <button onclick="document.getElementById('kalimat').innerHTML = 'Hello Javascript'">Ubah html</button>
+    <button onclick="document.getElementById('kalimat').style.fontSize = '40px'">Ubah font size</button>
+    <button onclick="document.getElementById('kalimat').style.display = 'none'">HIDE</button>
+    <button onclick="document.getElementById('kalimat').style.display = 'block'">VISIBLE</button>
+  </body>
+</html>
